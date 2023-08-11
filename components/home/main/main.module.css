@@ -14,8 +14,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
+
+  font-family: "Bumbon";
+  font-weight: bold;
 }
 
+.tagline {
+  color: aliceblue;
+  font-size: 1.5rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Genera";
+}
 .searchbar {
   display: flex;
   justify-content: center;

@@ -1,0 +1,9 @@
+/* Bumbon */
+@font-face {
+  font-family: "Bumbon";
+  src: local("Bumbon Bold"),
+    url("/fonts/Bumbon/LDBumbon-Bold.woff2") format("woff2"),
+    url("/fonts/Bumbon/LDBumbon-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
