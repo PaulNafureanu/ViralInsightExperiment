@@ -10,7 +10,7 @@ export default function Main() {
           Quickly explore viral structures from renewed scientific sources.
         </p>
       </div>
-      <SearchBar className={styles.searchbar} />
+      {/* <SearchBar className={styles.searchbar} /> */}
     </main>
   );
 }

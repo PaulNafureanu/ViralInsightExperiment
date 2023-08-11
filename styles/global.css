@@ -3,3 +3,14 @@
 *::before {
   box-sizing: border-box;
 }
+
+:root {
+  --color-primary: #25142d;
+  --color-secondary: #7b4397;
+  --color-accent: #dc2531;
+  --gradient-primary: linear-gradient(
+    to right,
+    var(--color-secondary),
+    var(--color-accent)
+  );
+}
