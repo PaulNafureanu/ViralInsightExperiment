@@ -3,23 +3,16 @@ import { useLoader, useFrame } from "@react-three/fiber";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { useRef } from "react";
 
-const pathMapper = {
-  virus: "/scenes/virus/scene.gltf",
-};
-
-interface Props {
-  name: keyof typeof pathMapper;
-}
-
-const Scene: React.FC<Props> = ({ name }) => {
+const Virus = () => {
+  const path = "/scenes/virus/scene.gltf";
   const ref = useRef<THREE.Mesh>(null);
-  const gltf = useLoader(GLTFLoader, pathMapper[name]);
+  const gltf = useLoader(GLTFLoader, path);
 
   useFrame(({ clock }) => {
-    if (ref.current) ref.current.rotation.x += 0.01;
+    if (ref?.current) ref.current.rotation.x += 0.01;
   });
 
   return <primitive object={gltf.scene} ref={ref} />;
 };
 
-export default Scene;
+export default Virus;
